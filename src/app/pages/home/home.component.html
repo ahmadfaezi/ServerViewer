@@ -1,0 +1,37 @@
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h1>Database</h1>
+                </div>
+                <div class="ibox-content">
+                    <button type="button" (click)="reloadDB()" class="btn btn-block btn-primary">Reload Database</button>
+                </div>
+            </div>
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h1>Server List</h1>
+                </div>
+                <div class="ibox-content">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Device</th>
+                                <th>HostName</th>
+                                <th>URL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of serverList">
+                                <td>{{data.Device}}</td>
+                                <td>{{data.Hostname}}</td>
+                                <td><a href="{{data.URL}}" target="_blank">{{data.URL}}</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
