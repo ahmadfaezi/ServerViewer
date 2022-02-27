@@ -15,6 +15,20 @@ cd ng-dashboard
 npm install
 npm start
 ```
+```
+## IIS
+cd <PATH>
+npm install
+npm install -g@ angular/cli
+npm install pm2@latest -g
+npm run ng build
+deploy dist in IIS
+
+cd <BACKEND>
+pm2 start index.js
+pm2 startup
+
+```
 ## Build
 ```
 npm start build
