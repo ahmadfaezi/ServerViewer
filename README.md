@@ -15,8 +15,9 @@ cd ng-dashboard
 npm install
 npm start
 ```
+
+## IIS
 ```
-IIS
 cd <PATH>
 npm install
 npm install -g@ angular/cli
